@@ -11,34 +11,76 @@
 
 </head>
 <body>
+    
     <div class = "container">
         <header>
             <nav class="nav">
                 <ul class = "nav-list">
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About</a></li>
-                    <li><a href = "projects.html">Projects</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
+                    <li><a href="#" data-target="home">Home</a></li>
+                    <li><a href="#" data-target="about">About</a></li>
+                    <li><a href="#" data-target="projects">Projects</a></li>
+                    <li><a href="#" data-target="contact">Contact</a></li>
+
                 </ul>
             </nav>
         </header>
 
-        <section class = "hero-area">
-            <div class = "hero-bubble">
-                <h1>Hi, I’m Yogesh Sheoran</h1>
-                <h2>Computer Science Student | Web Developer</h2>
+        <section class="hero-area">
 
-                <p>
-                    I build clean and responsive websites and love learning
-                    modern web development step by step.
-                </p>
-                <div class = "bubble-buttons">
-                    <a href="#projects" class="primary_button">View Projects</a>
-                    <a href="#contact" class="secondary_button">View Projects</a>
+            <div class="bubble-container">
+
+                <div class="hero-bubble active home-bubble" data-section="home">
+                    <div class="profile-pic">
+                        <img src="assets/profile.jpeg" alt="Yogesh Sheoran">
+                    </div>
+                    <h1>Hi, I’m Yogesh Sheoran</h1>
+                    <h2>Computer Science Student | Web Developer</h2>
+                    <p>
+                        I’m passionate about building clean, responsive websites and continuously improving my problem-solving skills. Currently learning full-stack web development and Data Structures to become a skilled software developer.
+                    </p>
+                    
+
                 </div>
+
+                <div class="hero-bubble" data-section="about">
+                    <h3>About Me</h3>
+                    <p>
+                        I’m a Computer Science Engineering student currently pursuing my BE in CSE 
+                        from Chandigarh University, Mohali. I am currently in my 4th semester.
+                    </p>
+
+                    <p>
+                        I have learned HTML and CSS, and I’m currently learning JavaScript while 
+                        improving my problem-solving skills through Data Structures and Algorithms in C++.
+                    </p>
+
+                    <p>
+                        I also have basic knowledge of Python and SQL, and experience with C and C++. 
+                        Recently, I have started learning Java to expand my programming skills further.
+                    </p>
+
+                    <p>
+                        My goal is to become a skilled software developer and work on real-world projects.
+                    </p>
+                </div>
+
+
+                <div class="hero-bubble" data-section="projects">
+                    <h3>Projects</h3>
+                    <p>Things I’ve built</p>
+                </div>
+
+                <div class="hero-bubble" data-section="contact">
+                    <h3>Contact</h3>
+                    <p>Get in touch</p>
+                </div>
+
             </div>
+
         </section>
+
     </div>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

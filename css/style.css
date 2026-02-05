@@ -170,3 +170,31 @@
     margin: 0 auto;
 }
 
+.contact-list{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-item img{
+    width: 28px;
+    height: 28px;
+}
+
+.contact-item a{
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover{
+    color: #38bdf8;
+}

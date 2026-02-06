@@ -266,3 +266,11 @@
 .project-link:hover{
     text-decoration: underline;
 }
+
+.nav-list a.active{
+    border-radius: 20px;
+    background:#1e293b;
+    color:#38bdf8;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+

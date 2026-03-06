@@ -79,27 +79,48 @@
     left:50%;
 
     width:70%;
-    max-width: 700px;
-    padding:80px 50px;
+    max-width:700px;
     min-height:350px;
+    max-height:520px;   /* limits bubble height */
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding:80px 50px;
 
     background:rgba(15,23,42,0.6);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
 
     border-radius:40px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.35);
 
-    box-shadow : 0 15px 30px rgba(0,0,0,0.35);
-    text-align: center;
+    text-align:center;
     color:#e5e7eb;
 
-    transform: translate(-50%, -50%);
+    overflow-y:auto;   /* enables scrolling */
 
-    transition: transform 0.6s ease, 
-                opacity 0.6s ease, 
+    transform:translateY(50px);
+
+    transition: transform 0.6s ease,
+                opacity 0.6s ease,
                 filter 0.6s ease;
 
     cursor:pointer;
+}
+
+.project-card p,
+.project-card a{
+    word-wrap: break-word;
+}
+
+.hero-bubble::-webkit-scrollbar{
+    width:6px;
+}
+
+.hero-bubble::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:10px;
 }
 
 .hero-bubble.active{
@@ -228,18 +249,35 @@
     margin-bottom: 30px;
 }
 
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .project-card{
-    padding: 28px;
-    border-radius: 22px;
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
-    text-align: left;
+    width:100%;
+    padding:25px 28px;
+    margin-top:20px;
+
+    background: rgba(30,41,59,0.55);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+/* hover effect */
+
+.project-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.35);
 }
 
 .project-card h4{
-    font-size: 1.6rem;
-    margin-bottom: 12px;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
     color: #38bdf8;
 }
 
@@ -251,20 +289,35 @@
 }
 
 .tech-used{
-    font-size: 0.95rem;
-    opacity: 0.85;
+    margin-top:10px;
+    font-size:0.95rem;
+    opacity:0.85;
 }
 
 .project-link{
-    display: inline-block;
-    margin-top: 12px;
-    color: #38bdf8;
-    font-weight: 600;
-    text-decoration: none;
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 16px;
+
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    font-weight:600;
+
+    border-radius:8px;
+
+    transition: background 0.2s ease;
 }
 
 .project-link:hover{
+    background:#0ea5e9;
     text-decoration: underline;
+}
+
+.project-status{
+    font-size: 0.8em;
+    color: #38bdf8;
+    margin-left: 8px;
 }
 
 .nav-list a.active{

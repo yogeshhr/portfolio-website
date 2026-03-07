@@ -326,31 +326,23 @@
     gap:12px;
 }
 
-.btn-live{
-    padding:7px 14px;
-    background:#38bdf8;
-    color:#0f172a;
-    text-decoration:none;
-    border-radius:7px;
-    font-weight:600;
-}
-
-.btn-code{
-    padding:7px 14px;
+.project-buttons a{
+    padding:8px 16px;
     border:1px solid #38bdf8;
     color:#38bdf8;
     text-decoration:none;
-    border-radius:7px;
+    border-radius:8px;
     font-weight:600;
+
+    transition: background 0.25s ease,
+                color 0.25s ease,
+                transform 0.2s ease;
 }
 
-.btn-live:hover{
-    background:#0ea5e9;
-}
-
-.btn-code:hover{
+.project-buttons a:hover{
     background:#38bdf8;
     color:#0f172a;
+    transform: translateY(-2px);
 }
 
 .nav-list a.active{

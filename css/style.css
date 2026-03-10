@@ -342,7 +342,8 @@
 .project-buttons a:hover{
     background:#38bdf8;
     color:#0f172a;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
 }
 
 .nav-list a.active{

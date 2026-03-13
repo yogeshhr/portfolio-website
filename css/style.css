@@ -515,3 +515,35 @@
         font-size: 1.9rem;
     }
 }
+
+.skills-section{
+    margin-top:30px;
+}
+
+.skills-section h4{
+    font-size:1.3rem;
+    margin-bottom:15px;
+}
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill-tag{
+    padding:6px 12px;
+
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:15px;
+
+    font-size:0.9rem;
+}
+
+.skill-tag:hover{
+    background:#38bdf8;
+    color:#0f172a;
+    transform:translateY(-2px);
+}

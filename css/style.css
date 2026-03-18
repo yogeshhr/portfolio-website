@@ -582,3 +582,19 @@
     transform:translateY(-2px);
     box-shadow:0 6px 12px rgba(0,0,0,0.25);
 }
+
+.nav-list a{
+    transition: all 0.3s ease;
+}
+
+.nav-list a.active{
+    transform: scale(1.05);
+}
+
+.profile-pic{
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover{
+    transform: scale(1.05);
+}

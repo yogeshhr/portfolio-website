@@ -16,12 +16,16 @@
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
-    padding:20px;
+    padding:18px 28px;
     border-radius: 50px;
     background: rgba(15,23,42,0.75);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid rgba(255,255,255,0.4);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35);
+
+    transition: all 0.3s ease;
 }
 
 .nav-list a{
@@ -592,7 +596,12 @@
 }
 
 .nav-list a.active{
-    transform: scale(1.05);
+    background: rgba(56,189,248,0.18);
+
+    box-shadow:
+        0 0 14px rgba(12, 57, 77, 0.45);
+
+    color:#38bdf8;
 }
 
 .profile-pic{

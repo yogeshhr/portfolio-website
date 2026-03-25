@@ -164,21 +164,24 @@
 
 .hero-bubble h1{
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom:10px;
+    letter-spacing: 0.5px;
 }
 
 .hero-bubble h2{
   font-size: 1.4rem;
   color: #38bdf8;
   margin-bottom: 20px;
+  letter-spacing: 0.6px;
 }
 
 .hero-bubble p{
   font-size: 1.1rem;
   opacity: 0.9;
-  line-height: 1.6;
+  line-height: 1.75;
   max-width: 80%;
+  letter-spacing: 0.2px;
 }
 
 .profile-pic{
@@ -580,6 +583,9 @@
 
     transition: all 0.25s ease;
     cursor: default;
+
+    font-weight: 500;
+    letter-spacing: 0.3px;
 }
 
 /* Hover effect */
@@ -621,4 +627,12 @@
 
 .hero-bubble[data-section="contact"]{
     min-height: 520px;
+}
+
+.hero-bubble h3{
+    letter-spacing: 0.8px;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
 }

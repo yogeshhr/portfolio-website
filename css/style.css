@@ -118,6 +118,8 @@
                 filter 0.6s ease;
 
     cursor:pointer;
+
+    border: 1px solid rgba(255,255,255,0.06);
 }
 
 .project-card p,
@@ -631,8 +633,43 @@
 
 .hero-bubble h3{
     letter-spacing: 0.8px;
+    margin-bottom: 20px;
 }
 
 body{
     -webkit-font-smoothing: antialiased;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a, button{
+    transition: all 0.25s ease;
+}
+
+::selection{
+    background: rgba(56,189,248,0.35);
+    color: white;
+}
+
+.hero-bubble::-webkit-scrollbar-thumb{
+    background: rgba(56,189,248,0.6);
+}
+
+.nav-list a,
+.project-buttons a{
+    cursor: pointer;
+}
+
+.project-buttons a:active{
+    transform: scale(0.97);
+}
+
+img{
+    user-select: none;
+}
+
+.hero-bubble{
+    background: rgba(15,23,42,0.55);
 }

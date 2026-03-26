@@ -673,3 +673,7 @@ img{
 .hero-bubble{
     background: rgba(15,23,42,0.55);
 }
+
+.hero-bubble{
+    cursor: default;
+}

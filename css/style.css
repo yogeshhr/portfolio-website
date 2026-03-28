@@ -300,8 +300,9 @@
 /* hover effect */
 
 .project-card:hover{
-    transform: translateY(-4px);
-    box-shadow: 0 12px 22px rgba(0,0,0,0.35);
+    transform: translateY(-5px);
+    box-shadow: 0 18px 28px rgba(0,0,0,0.35);
+    border-color: rgba(56,189,248,0.25);
 }
 
 .project-card h4{

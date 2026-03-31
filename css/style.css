@@ -732,3 +732,14 @@ body{
     }
 
 }
+
+.highlight{
+    background: linear-gradient(90deg,#22c55e,#16a34a);
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    font-weight:600;
+}

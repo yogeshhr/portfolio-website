@@ -772,3 +772,20 @@ body{
     letter-spacing: 0.2px;
 }
 
+@keyframes floatBubble{
+    0%{
+        transform: translate(-50%, -50%) scale(1.05) translateY(0px);
+    }
+
+    50%{
+        transform: translate(-50%, -50%) scale(1.05) translateY(-6px);
+    }
+
+    100%{
+        transform: translate(-50%, -50%) scale(1.05) translateY(0px);
+    }
+}
+
+.hero-bubble.active{
+    animation: floatBubble 6s ease-in-out infinite;
+}

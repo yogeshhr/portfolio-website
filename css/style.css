@@ -889,3 +889,12 @@ body{
 
     z-index:0;
 }
+
+.project-buttons a:active{
+    transform: translateY(0px) scale(0.97);
+
+    box-shadow:
+        0 3px 8px rgba(0,0,0,0.35);
+
+    transition: transform 0.08s ease;
+}

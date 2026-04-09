@@ -898,3 +898,26 @@ body{
 
     transition: transform 0.08s ease;
 }
+
+.nav-list a{
+    position:relative;
+    border-radius:20px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+}
+
+.nav-list a.active{
+    background: rgba(56,189,248,0.15);
+
+    color:#38bdf8;
+
+    box-shadow:
+        0 0 12px rgba(56,189,248,0.25),
+        inset 0 0 6px rgba(56,189,248,0.15);
+
+    transform: scale(1.04);
+}

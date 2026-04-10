@@ -921,3 +921,13 @@ body{
 
     transform: scale(1.04);
 }
+
+::selection{
+    background: rgba(56,189,248,0.35);
+    color:#ffffff;
+}
+
+::-moz-selection{
+    background: rgba(56,189,248,0.35);
+    color:#ffffff;
+}

@@ -939,3 +939,29 @@ html{
 body{
     overscroll-behavior: none;
 }
+
+.hero-bubble h3{
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.hero-bubble h3::after{
+    content:"";
+    position:absolute;
+
+    left:50%;
+    bottom:0;
+
+    width:60px;
+    height:1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(56,189,248,0.5),
+        transparent
+    );
+
+    transform: translateX(-50%);
+}

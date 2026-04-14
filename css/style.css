@@ -974,3 +974,15 @@ body{
         inset 0 1px 0 rgba(255,255,255,0.06),  /* top light */
         0 15px 30px rgba(0,0,0,0.35);
 }
+
+.hero-bubble h3{
+    background: linear-gradient(90deg,#38bdf8,#22c55e);
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    font-weight:600;
+    letter-spacing:0.5px;
+}

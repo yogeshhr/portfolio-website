@@ -986,3 +986,24 @@ body{
     font-weight:600;
     letter-spacing:0.5px;
 }
+
+.hero-bubble.active::after{
+    content:"";
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:120%;
+    height:120%;
+
+    transform: translate(-50%, -50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(56,189,248,0.08),
+        transparent 60%
+    );
+
+    z-index:-1;
+}

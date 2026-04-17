@@ -1009,3 +1009,9 @@ body{
 
     z-index:-1;
 }
+
+.nav-list a,
+.project-buttons a,
+.skill-tag{
+    user-select: none;
+}

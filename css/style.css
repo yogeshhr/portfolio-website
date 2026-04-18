@@ -1015,3 +1015,22 @@ body{
 .skill-tag{
     user-select: none;
 }
+
+/* Scrollbar styling */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(56,189,248,0.35);
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(56,189,248,0.55);
+}

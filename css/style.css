@@ -1047,6 +1047,8 @@ body{
 
     .hero-bubble{
         padding: 50px 22px;
+        width: 92%;
+        margin: 20px auto;
     }
 
     .hero-bubble p{
@@ -1063,4 +1065,36 @@ body{
         line-height: 1.5;
     }
 
+    body, html{
+        overflow-x: hidden;
+    }
+
+
+    .hero-area{
+        height: auto !important;
+    }
+
+    .bubble-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto !important;
+    }
+
+    .hero-bubble{
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+
+        transform: none !important;
+
+        width: 92%;
+        margin: 25px auto;
+
+        opacity: 1 !important;
+        filter: none !important;
+
+        max-height: none;
+        overflow: visible;
+    }
 }

@@ -1098,3 +1098,11 @@ body{
         overflow: visible;
     }
 }
+
+.nav-list a:active,
+.project-buttons a:active,
+.skill-tag:active{
+    transform: scale(0.96);
+
+    opacity: 0.8;
+}

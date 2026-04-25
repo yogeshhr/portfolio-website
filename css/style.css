@@ -941,6 +941,7 @@ html{
 
 body{
     overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 .hero-bubble h3{

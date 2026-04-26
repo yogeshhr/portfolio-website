@@ -73,7 +73,7 @@
     position:relative;
     height:calc(100vh - 120px);
     display:flex;
-    overflow:hidden;
+    overflow: visible;
     justify-content: center;
     align-items:center;
 }
@@ -940,7 +940,6 @@ html{
 }
 
 body{
-    overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -1096,7 +1095,7 @@ body{
         filter: none !important;
 
         max-height: none;
-        overflow: visible;
+        overflow-y: visible !important;
     }
 }
 

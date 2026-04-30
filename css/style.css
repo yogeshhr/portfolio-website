@@ -1138,3 +1138,15 @@ body{
 .hero-bubble:hover::before{
     left:150%;
 }
+
+@media (max-width:900px){
+
+    .hero-bubble{
+        margin: 30px auto;
+    }
+
+    .hero-bubble:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+}
